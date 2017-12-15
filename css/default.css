@@ -1,0 +1,339 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(http://fonts.gstatic.com/s/raleway/v12/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(http://fonts.gstatic.com/s/raleway/v12/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body, html { font-size: 100%; 	padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+    font-family: 'Raleway'
+    color: #47a3da;
+
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+.logo{
+	width: 160px;
+height: auto;
+z-index: 99;
+float: left;
+color: blue;
+}
+.logomai{
+	width: 314px;
+height: auto;
+z-index: 99;
+color: blue;
+}
+.navIcon{
+	width: 34px;
+height: 30px;
+cursor: pointer;
+background: transparent;
+border: 0;
+font-size: 35px;
+z-index: 99;
+color: #fff;
+}
+
+.main_con{
+	margin: 0px;
+	/*background: #2c2f35;*/
+	height: 800px;
+	background-image: url('../images/f.jpg');
+}
+.mainLogo{
+	text-align: center;
+	color: white;
+	margin-top: 15%;
+}
+.eventImg{
+	max-width: 250px!important;
+max-height: 400px!important;
+}
+
+.main,
+.container > header {
+	width: 100%;
+max-width: 85em;
+margin: 0 auto;
+	padding: 0 1.875em 3.125em 1.875em;
+}
+
+.container > header {
+	    padding: 5.875em 1px 1.875em;
+}
+
+.container > header h1 {
+	font-size: 2.125em;
+	line-height: 1.3;
+	margin: 0;
+	float: left;
+	font-weight: 400;
+}
+
+.container > header span {
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	padding: 0 0 0.6em 0.1em;
+}
+
+.container > header nav {
+	float: right;
+}
+
+.container > header nav a {
+	display: block;
+	float: left;
+	position: relative;
+	width: 2.5em;
+	height: 2.5em;
+	background: #fff;
+	border-radius: 50%;
+	color: transparent;
+	margin: 0 0.1em;
+	border: 4px solid #47a3da;
+	text-indent: -8000px;
+}
+
+.container > header nav a:after {
+	content: attr(data-info);
+	color: #47a3da;
+	position: absolute;
+	width: 600%;
+	top: 120%;
+	text-align: right;
+	right: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.container > header nav a:hover:after {
+	opacity: 1;
+}
+
+.container > header nav a:hover {
+	background: #47a3da;
+}
+
+.main > section {
+
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+padding: 96px 0;
+}
+.teAli{
+	text-align: center;
+}
+.maLoagos{
+	    margin-top: 15%;
+}
+.secicon{
+	    width: 135px;
+}
+.secH1{
+	margin-bottom: 30px;
+}
+
+.sec1{
+
+  padding: 99px 71px;
+
+}
+.divider {
+    background-image: url('../images/dha1.png');
+    background-size: cover;
+    width: 100px;
+    height: 20px;
+    display: inline-block;
+    z-index: 99;
+    position: relative;
+}
+.sec5{
+  padding: 47px 71px;
+}
+footer a{
+  color: #333!important;
+font-size: 12px;
+font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+footer h3{
+
+display: block;
+font-size: 20px;
+text-transform: uppercase;
+font-weight: bold;
+color: #000;
+margin: 15px 0 10px;
+}
+footer p{
+  line-height: 24px;
+position: relative;
+z-index: 1;
+color: #000;
+}
+.texCenter{
+  text-align: center;
+}
+
+.sec4{
+	background:#fff;
+  padding: 99px 71px;
+
+}
+.os-animation{
+  opacity: 0;
+}
+
+.os-animation.animated{
+    opacity: 1;
+}
+.title-space {
+    letter-spacing: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 200;
+    margin-top: 24px;
+    padding-top: 5px;
+}
+.h2font{
+	font-weight:bold;
+}
+.pfont{
+	color: #333;
+    font-weight: 400;
+    opacity: .8;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+}
+.sec3{
+
+  padding: 99px 71px;
+	color: #fff;
+	background-image: url('../images/f.jpg');
+  box-shadow: inset 0 0 33px #000;
+}
+.foSty{
+  font-family: 'Comic Sans MS', cursive;
+    color: #000;
+    font-style: italic;
+}
+.sec3 p{
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+.sec2{
+	color:#333;
+padding: 99px 71px;
+box-shadow: inset 0 0 33px #aaa;
+background-image: url('../images/sec2patt.jpg');
+
+
+}
+
+.main > section h2 {
+	font-weight: 300;
+	color: #ccc;
+}
+
+.main > section button {
+	border: none;
+	background: #47a3da;
+	color: #fff;
+	padding: 1.5em;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	margin: 10px 0;
+	font-size: 0.8em;
+}
+
+.main > section button:hover {
+	background: #258ecd;
+}
+
+.main > section button.active {
+	background: #0d77b6;
+}
+
+.main > section button.disabled {
+	background: #aaa;
+	pointer-events: none;
+}
+
+.icon-drop:before,
+.icon-arrow-left:before {
+	font-family: 'fontawesome';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 2;
+	text-align: center;
+	color: #47a3da;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 8000px;
+	padding-left: 8px;
+}
+
+.container > header nav a:hover:before {
+	color: #fff;
+}
+
+.icon-drop:before {
+	content: "\e000";
+}
+
+.icon-arrow-left:before {
+	content: "\f060";
+}
